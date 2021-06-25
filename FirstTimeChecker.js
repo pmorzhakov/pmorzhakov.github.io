@@ -28,5 +28,5 @@ window.onload = function () {
 function SetLocalStorage()
 {
    	localStorage.noFirstVisit = "2";
-	document.getElementById('first').style.display = 'none';
+	document.getElementById('spin').style.display = 'none';
 }
