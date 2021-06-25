@@ -3,10 +3,7 @@ window.onload = function () {
     console.log('first time');
     document.getElementById('first').style.display = 'block';
     localStorage.noFirstVisit = "1";
-    document.getElementById('start').onclick = function () {
-    	document.getElementById('first').style.display = 'none';
-      document.getElementById('wrap').style.display = 'block';
-		};
+    
     } else {
       if(localStorage.noFirstVisit == "1"){
         document.getElementById('wrap').style.display = 'block';
@@ -17,7 +14,10 @@ window.onload = function () {
 
     }
 
-
+	document.getElementById('start').onclick = function () {
+    		document.getElementById('first').style.display = 'none';
+      	document.getElementById('wrap').style.display = 'block';
+		};
 
     document.getElementById('restore').onclick = function () {
         localStorage.noFirstVisit = "";
