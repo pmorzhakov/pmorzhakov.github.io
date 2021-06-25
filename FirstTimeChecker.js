@@ -20,12 +20,12 @@ window.onload = function () {
       		document.getElementById('wrap').style.display = 'block';
 	};
 	
-	document.getElementById('spin').onclick = function () {
-		localStorage.noFirstVisit = "2";
-	};
-
     	document.getElementById('restore').onclick = function () {
 		localStorage.noFirstVisit = "";
 		document.getElementById('restore').innerHTML = "DO NOT FORGET TO RUN AGAIN THE PAGE";
     	};
+}
+function SetLocalStorage()
+{
+    localStorage.noFirstVisit = "2";
 }
