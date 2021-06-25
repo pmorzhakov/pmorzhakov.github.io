@@ -324,7 +324,7 @@ function sendGoogleForm(reward){
             var _reward = reward;
             
             var _url = "https://docs.google.com/forms/d/e/1FAIpQLSdBhcNkVqfyxnobmVvOHmtrdJKAwwrhW8PNO7vcFuVb9oVsnA/formResponse?usp=pp_url&entry.200784527=" + _name + "&entry.235462744=" + _company + "&entry.1453945788=" + _reward + "&submit=Submit";
-            window.open(_url);
+            window.location.href = _url;
         }
 
 // count up the reward credits, play sound effects, etc.
