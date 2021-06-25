@@ -7,7 +7,7 @@ window.onload = function () {
     } else {
       if(localStorage.noFirstVisit == "1"){
         document.getElementById('wrap').style.display = 'block';
-        localStorage.noFirstVisit = "2";
+        //
       } else {
         document.getElementById('last').style.display = 'block';
       }
@@ -16,6 +16,7 @@ window.onload = function () {
 
 	document.getElementById('start').onclick = function () {
     		document.getElementById('first').style.display = 'none';
+		localStorage.noFirstVisit = "2";
       	document.getElementById('wrap').style.display = 'block';
 		};
 
