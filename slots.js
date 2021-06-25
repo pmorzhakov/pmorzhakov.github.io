@@ -320,10 +320,10 @@ function logic_spindown() {
 function sendGoogleForm(reward){
             // Selecting the input element and get its value 
             var _name = document.getElementById("fname").value;
-            var _company = document.getElementById("company").value;
+            var _company = document.getElementById("fcompany").value;
             var _reward = reward;
             
-            var _url = "https://docs.google.com/forms/d/e/1FAIpQLSdBhcNkVqfyxnobmVvOHmtrdJKAwwrhW8PNO7vcFuVb9oVsnA/formResponse?usp=pp_url&entry.200784527=" + _name + "&entry.235462744=" + _company + "&entry.1453945788=" + _reward + "&submit=Submit";
+            var _url = "https://docs.google.com/forms/d/e/1FAIpQLSdBhcNkVqfyxnobmVvOHmtrdJKAwwrhW8PNO7vcFuVb9oVsnA/formResponse?usp=pp_url&entry.200784527=" + _name + "entry.235462744=" + _company + "&entry.1453945788=" + _reward + "&submit=Submit";
             
             document.getElementById("gform").action = _url;
             document.getElementById("gform").submit();
