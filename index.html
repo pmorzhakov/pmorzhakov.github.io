@@ -9,35 +9,36 @@
 
   </head>
   <body>
-    <div id="first">
-        Добро пожаловать!
-        <form>
-          <label for="fname">First name:</label><br>
-          <input type="text" id="fname" name="fname" value="Имя"><br>
-          <label for="company">Last name:</label><br>
-          <input type="text" id="fcompany" name="company" value="Компания"><br><br>
-          <input type="button" id = "start" value="Начать">
-        </form>
-    </div>
-
-    <div id="last">
-        Вы уже играли!
-    </div>
-
-
-    <div id="wrap">
-      <div id="game">
-        <canvas id="slots" width="160" height="160"></canvas><br />
-        <button type="button" id="spin" onclick="spin(5); SetLocalStorage();">Крутить!</button>
+    <div id="container">
+      <div id="first">
+          Добро пожаловать!
+          <form>
+            <label for="fname">Введите Ваше имя:</label><br>
+            <input type="text" id="fname" name="fname" value="Имя"><br>
+            <label for="fcompany">Введите название компании:</label><br>
+            <input type="text" id="fcompany" name="company" value="Компания"><br><br>
+            <input type="button" id = "start" value="Начать">
+          </form>
       </div>
 
-      <div id="info">
-        <p id="credits"></p>
-        <p id="log"></p>
+      <div id="last">
+          Вы уже играли!
       </div>
 
-    </div>
 
+      <div id="wrap">
+        <div id="game">
+          <canvas id="slots" width="160" height="160"></canvas><br />
+          <button type="button" id="spin" onclick="spin(5); SetLocalStorage();">Крутить!</button>
+        </div>
+
+        <div id="info">
+          <p id="credits"></p>
+          <p id="log"></p>
+        </div>
+
+      </div>
+    </div>
 
     <button type="button" id="restore">RESTORE AND MAKE IT FIRST TIME [CLICK + RELOAD]</button>
 

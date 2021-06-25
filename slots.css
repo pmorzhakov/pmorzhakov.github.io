@@ -7,29 +7,31 @@ body {
   background-repeat: no-repeat;
 }
 
+#container{
+  width: auto;
+}
+
 #first {
-  width: 300px;
-  height: 240px;
+
   overflow: hidden;
   display: none;
 }
 
 #wrap {
-  width: 300px;
+  width: auto;
   height: 240px;
   overflow: hidden;
   display: none;
 }
 
 #last {
-  width: 300px;
-  height: 240px;
+
   overflow: hidden;
   display: none;
 }
 
 #game {
-  width: 200px;
+  width: auto;
   text-align: center;
 }
 
