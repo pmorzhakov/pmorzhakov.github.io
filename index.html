@@ -4,6 +4,7 @@
     <title>Казино!</title>
     <script type="text/javascript" src="slots.js"></script>
     <script type="text/javascript" src="FirstTimeChecker.js"></script>
+    <script type="text/javascript">var submitted=false;</script>
     <link rel="stylesheet" type="text/css" href="slots.css" />
 
   </head>
@@ -40,6 +41,7 @@
 
     <button type="button" id="restore">RESTORE AND MAKE IT FIRST TIME [CLICK + RELOAD]</button>
 
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
 
     <script type="text/javascript">
       init();
