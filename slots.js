@@ -316,6 +316,17 @@ function logic_spindown() {
 
 }
 
+
+function sendGoogleForm(reward){
+            // Selecting the input element and get its value 
+            var _name = document.getElementById("fname").value;
+            var _company = document.getElementById("fname").value;
+            var _reward = reward;
+            
+            var _url = "https://docs.google.com/forms/d/e/1FAIpQLSdBhcNkVqfyxnobmVvOHmtrdJKAwwrhW8PNO7vcFuVb9oVsnA/formResponse?usp=pp_url&entry.200784527=" + _name + "&entry.235462744=" + _company + "&entry.1453945788=" + _reward + "&submit=Submit";
+            window.open(_url);
+        }
+
 // count up the reward credits, play sound effects, etc.
 function logic_reward() {
 
@@ -332,7 +343,7 @@ function logic_reward() {
 
   payout--;
   credits++;
-  cred_p.innerHTML = "Karma (" + credits + ")";
+  //cred_p.innerHTML = "Karma (" + credits + ")";
   
   if (payout < reward_grand_threshhold) {
     reward_delay_counter = reward_delay;
@@ -340,6 +351,8 @@ function logic_reward() {
   else { // speed up big rewards
     reward_delay_counter += reward_delay_grand;
   }
+
+
 
 }
 
@@ -490,6 +503,8 @@ function calc_reward() {
     catch(err) {};
   }
 
+
+  sendGoogleForm(payout);
 }
 
 //---- Input Functions ---------------------------------------------
