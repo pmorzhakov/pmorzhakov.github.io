@@ -2,7 +2,6 @@ body {
   background-color: #FFFFFF;
   height: 100%;
   font-size: 1.5em;
-  font-family: 'Open Sans', sans-serif, Verdana, Arial;
 }
 
 #container{
@@ -72,15 +71,16 @@ input[type=submit] {
   color: #666666;
 }
 
-/* Style the header with a grey background and some padding */
 .header {
   overflow: hidden;
   background-color: #242833;
-  font-
-  padding: 20px 10px;
+  height: 50px;
 }
-.header h1{
+
+h1{
   color: white;
+  font-family: 'Open Sans', sans-serif, Verdana, Arial;
+  vertical-align: center;
 }
 
 /* Float the link section to the right */
