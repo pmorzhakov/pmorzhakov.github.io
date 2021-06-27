@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(#00CA2F, #009241);
+  background-color: #FFFFFF;
   height: 100%;
   font-size: 1.5em;
 }
@@ -34,14 +34,13 @@ body {
 
 
 input[type=text], select, textarea {
-  width: 80%;
-  padding: 12px;
+  width: 60%;
+  padding: 18px;
   border: 1px solid #ccc;
   border-radius: 4px; 
   box-sizing: border-box;
   margin-top: 6px; 
   margin-bottom: 16px;
-  margin: 10% 0% 0% 10%;
 }
 
 /* Style the submit button with a specific background color etc */
@@ -73,3 +72,14 @@ input[type=submit] {
   color: #666666;
 }
 
+/* Style the header with a grey background and some padding */
+.header {
+  overflow: hidden;
+  background-color: #242833;
+  padding: 20px 10px;
+}
+
+/* Float the link section to the right */
+.header-right {
+  float: right;
+}
