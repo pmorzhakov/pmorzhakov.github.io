@@ -75,11 +75,10 @@ input[type=submit] {
   margin-bottom: 10px;
 }
 
-p{
+.raffle-text{
+  padding-left: 60px;
   color: white;
   font-family: 'Open Sans', sans-serif, Verdana, Arial;
-  vertical-align: center;
-  text-align: left;
   font-size: 1em;
 }
 /* For mobile phones: */
