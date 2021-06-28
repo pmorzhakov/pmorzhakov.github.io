@@ -3,10 +3,6 @@ body {
   height: 100%;
 }
 
-#container{
-  width: auto;
-}
-
 #first {
 
   overflow: hidden;
@@ -71,7 +67,6 @@ input[type=submit] {
 }
 
 .header {
-  overflow: hidden;
   background-color: #242833;
   height: 50px;
 }
@@ -83,4 +78,15 @@ p{
   text-align: left;
   font-size: 1em;
 }
+/* For mobile phones: */
+.header-content, .container {
+  width: 100%;
+}
 
+/* For desktop: */
+@media only screen and (min-width: 768px) {
+  .header-content, .container {
+    margin: auto;
+    width: 70%;
+  }
+}
