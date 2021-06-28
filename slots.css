@@ -66,10 +66,6 @@ input[type=submit] {
   color: #666666;
 }
 
-.logo, .header-right{
-  display: inline;
-}
-
 .header {
   background-color: #242833;
   height: 50px;
@@ -96,4 +92,7 @@ input[type=submit] {
     margin: auto;
     width: 70%;
   }
+}
+.header-right{
+  float: left;
 }
