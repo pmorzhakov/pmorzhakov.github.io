@@ -1,11 +1,40 @@
 <html>
   <head>
 
-    <title>Казино!</title>
-    <script type="text/javascript" src="slots.js"></script>
+    <title>НТВ | Розыгрыщ</title>
     <script type="text/javascript" src="FirstTimeChecker.js"></script>
     <script type="text/javascript">var submitted=false;</script>
-    <link rel="stylesheet" type="text/css" href="slots.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="slots.css" /> -->
+    <!-- <link rel="stylesheet"  href="includes/styles.css" type="text/css" media="screen"> -->
+    <script type="text/javascript" src="includes/jquery-1.7.2.prod.js"></script>
+    <script type="text/javascript" src="includes/utils.js"></script>
+    <script type="text/javascript" src="includes/ImageObj.js"></script>
+    <script type="text/javascript" src="includes/SlotDO.js"></script>
+    <script type="text/javascript" src="includes/SlotDO2.js"></script>
+    <script type="text/javascript" src="includes/buzz/buzz.js"></script>
+<!--<script src="index.js" type="text/javascript"></script>
+--><script src="includes/jquery.slotMachine.js" type="text/javascript"></script>
+<script>
+$(function(){
+  var slotData=new SlotDO2(),
+  slotData2=new SlotDO()
+    
+              slotControlHtml2=$('<div id="slotControls">'
+
+               +'<a href="#" id = "spin"  class="button orange brackets floatChildLeft betMax" onclick="SetLocalStorage();"><img src="images/rupee.png"><span>Испытать удачу</span></a>'
+               
+                         
+              +'</div>');
+
+      $("#slotHolder2").slotMachine({
+       slotData:slotData2,
+     slotControls:slotControlHtml2
+       });
+});
+
+</script>
+ <link rel="stylesheet" type="text/css" href="includes/buttons.css"/>
 
   </head>
   <body>
@@ -21,30 +50,25 @@
 
     <div class="container">
       <div id="first">
-          Добро пожаловать!
+          <h2>Добро пожаловать!</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius voluptas quis vitae quasi dolor dicta, fuga soluta cupiditate eveniet illo nobis. Iure repellendus accusamus eaque minus tempore beatae sint autem. Lorem ipsum dolor sit amet consectetur adipisicing, elit. Vero ad tempora nostrum veniam eum magnam esse architecto distinctio, delectus inventore praesentium error totam omnis quod quasi, nemo ab repudiandae blanditiis.</p>
           <form>
             <label for="fname">Введите Ваше имя:</label><br>
             <input type="text" id="fname" name="fname" value="Имя"><br>
             <label for="fcompany">Введите название компании:</label><br>
             <input type="text" id="fcompany" name="company" value="Компания"><br><br>
-            <input type="submit" id = "start" value="Начать">
+            <input type="button" id = "start" value="Начать">
           </form>
       </div>
 
       <div id="last">
-          Вы уже играли!
+        <p>Вы уже играли!</p>
       </div>
 
 
       <div id="wrap">
-        <div id="game">
-          <canvas id="slots" width="160" height="160"></canvas><br />
-          <button type="button" id="spin" onclick="spin(5); SetLocalStorage();">Крутить!</button>
-        </div>
+        <div class="slotHolder" id="slotHolder2">
 
-        <div id="info">
-          <p id="credits"></p>
-          <p id="log"></p>
         </div>
 
       </div>
@@ -55,10 +79,6 @@
     <form name="gform" id="gform" style="display:none;" enctype="text/plain" method="post" action="https://docs.google.com/forms/d/14lh6MIQOy9j3jWzEl7BysxEe4p9OoU9WN3tytbQjj1I/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
     </form>
     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
-
-    <script type="text/javascript">
-      init();
-    </script>
 
   </body>
 </html>

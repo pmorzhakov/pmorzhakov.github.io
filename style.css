@@ -1,0 +1,124 @@
+body {
+  background-color: #FFFFFF;
+  height: 100%;
+  font-family: 'Open Sans', sans-serif, Verdana, Arial;
+}
+
+#first {
+
+  overflow: hidden;
+  display: none;
+  padding-left: 2px;
+  margin-left: auto;
+}
+
+#wrap {
+  overflow: hidden;
+  display: none;
+}
+
+#last {
+
+  overflow: hidden;
+  display: none;
+}
+
+#game {
+  text-align: center;
+}
+
+
+input[type=text], select, textarea {
+  width: 20%;
+  padding: 18px;
+  border: 1px solid #ccc;
+  border-radius: 4px; 
+  box-sizing: border-box;
+  margin-top: 6px; 
+  margin-bottom: 16px;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=button], button {
+  background-color: #00A03D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+
+#info {
+  position: absolute;
+  top: 20px;
+  left: 200px;
+  width: 100px;
+  text-align: left;
+  font-size: 9pt;
+}
+
+#credits {
+  font-size: 10pt;
+}
+
+#log {
+  color: #666666;
+}
+
+.header {
+  background-color: #242833;
+  height: 50px;
+  margin-top: -10px;
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-bottom: 10px;
+}
+
+.raffle-text{
+  padding-left: 10px;
+  color: white;
+  font-family: 'Open Sans', sans-serif, Verdana, Arial;
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  outline: medium none;
+}
+/* For mobile phones: */
+.header-content, .container {
+  width: 100%;
+}
+
+/* For desktop: */
+@media only screen and (min-width: 1081px) {
+  .header-content, .container {
+    margin: auto;
+    width: 60%;
+  }
+}
+.logo, .header-right{
+  float: left;
+}
+
+h2{
+  padding: 0;
+  margin-top:  16px;
+  font-size: 22px;
+  letter-spacing: -0.5px;
+  line-height: normal;
+  outline: medium none;
+  font-family: 'Open Sans', sans-serif, Verdana, Arial;
+}
+
+label{
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  letter-spacing: -0.5px;
+  line-height: normal;
+  outline: medium none;
+  font-family: 'Open Sans', sans-serif, Verdana, Arial;
+  font-weight: bold;
+}

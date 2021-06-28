@@ -5,11 +5,13 @@ window.onload = function () {
     //localStorage.noFirstVisit = "1";
     
     } else {
+
       if(localStorage.noFirstVisit == "1"){
         document.getElementById('wrap').style.display = 'block';
         //
       } else {
         document.getElementById('last').style.display = 'block';
+        console.log('already played');
       }
 
     }
@@ -27,6 +29,6 @@ window.onload = function () {
 }
 function SetLocalStorage()
 {
-   	localStorage.noFirstVisit = "2";
+  localStorage.noFirstVisit = "2";
 	document.getElementById('spin').style.display = 'none';
 }
