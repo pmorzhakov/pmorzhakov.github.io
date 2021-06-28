@@ -84,7 +84,3 @@ p{
   font-size: 1em;
 }
 
-/* Float the link section to the right */
-.header-right {
-  float: left;
-}
