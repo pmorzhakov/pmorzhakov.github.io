@@ -1,7 +1,6 @@
 body {
   background-color: #FFFFFF;
   height: 100%;
-  font-size: 1.5em;
 }
 
 #container{
@@ -77,13 +76,15 @@ input[type=submit] {
   height: 50px;
 }
 
-h1{
+p{
   color: white;
   font-family: 'Open Sans', sans-serif, Verdana, Arial;
   vertical-align: center;
+  text-align: left;
+  font-size: 1em;
 }
 
 /* Float the link section to the right */
 .header-right {
-  float: right;
+  float: left;
 }
