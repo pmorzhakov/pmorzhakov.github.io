@@ -69,6 +69,10 @@ input[type=submit] {
 .header {
   background-color: #242833;
   height: 50px;
+  margin-top: -10px;
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-bottom: 10px;
 }
 
 p{
@@ -81,10 +85,6 @@ p{
 /* For mobile phones: */
 .header-content, .container {
   width: 100%;
-  margin-top: -10px;
-  margin-left: -10px;
-  margin-right: -10px;
-  margin-bottom: 10px;
 }
 
 /* For desktop: */
