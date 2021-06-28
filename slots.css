@@ -81,10 +81,14 @@ p{
 /* For mobile phones: */
 .header-content, .container {
   width: 100%;
+  margin-top: -10px;
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-bottom: 10px;
 }
 
 /* For desktop: */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   .header-content, .container {
     margin: auto;
     width: 70%;
