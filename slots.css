@@ -88,7 +88,7 @@ p{
 }
 
 /* For desktop: */
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 1081px) {
   .header-content, .container {
     margin: auto;
     width: 70%;
