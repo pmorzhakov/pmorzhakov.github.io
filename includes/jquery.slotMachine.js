@@ -330,7 +330,7 @@ if (typeof Object.create !== 'function') {
 
 						self.textOffset += 30
 
-						self.drawLine(self.options.slotData.lines[i], "Won " + self.payoutArr[i] + " on Line " + (i + 1))
+						self.drawLine(self.options.slotData.lines[i], "")
 						self.ctx.restore();
 					}
 
@@ -338,7 +338,7 @@ if (typeof Object.create !== 'function') {
 
 				}
 				self.textOffset += 30
-				self.ctx.fillText("Total Winnings:" + self.payoutTotal, 0, self.textOffset)
+				//self.ctx.fillText("Total Winnings:" + self.payoutTotal, 0, self.textOffset)
 				if (self.payoutTotal > 0) {
 					self.options.slotData.winSound.play();
 					self.creditsWon.val(self.payoutTotal);
@@ -372,6 +372,17 @@ if (typeof Object.create !== 'function') {
             
             	document.getElementById("gform").action = _url;
             	document.getElementById("gform").submit();
+
+            	//display result
+            	var _results = "Вы набрали ";
+            	_results = _results + self.payoutTotal;
+            	if(self.payoutTotal > 0){
+            		_results = _results + " баллов. Неплохо!";
+            	}else{
+            		_results = _results + " баллов. Повезёт в другой раз!";
+            	}
+            	_results = _results + " Ваш результат сохранён. Итоги будут подведены совсем скоро!";
+            	document.getElementById("results").innerHTML = _results;
 
 
 

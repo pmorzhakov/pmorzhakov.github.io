@@ -21,10 +21,8 @@ $(function(){
   slotData2=new SlotDO()
     
               slotControlHtml2=$('<div id="slotControls">'
-
-               +'<a href="#" id = "spin"  class="button orange brackets floatChildLeft betMax" onclick="SetLocalStorage();"><img src="images/rupee.png"><span>Испытать удачу</span></a>'
-               
-                         
+              +'<input type="button" id = "spin"  class="betMax" onclick="SetLocalStorage();" value="Испытать удачу">'
+              +'<p id="results"></p>'     
               +'</div>');
 
       $("#slotHolder2").slotMachine({
@@ -54,15 +52,15 @@ $(function(){
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius voluptas quis vitae quasi dolor dicta, fuga soluta cupiditate eveniet illo nobis. Iure repellendus accusamus eaque minus tempore beatae sint autem. Lorem ipsum dolor sit amet consectetur adipisicing, elit. Vero ad tempora nostrum veniam eum magnam esse architecto distinctio, delectus inventore praesentium error totam omnis quod quasi, nemo ab repudiandae blanditiis.</p>
           <form>
             <label for="fname">Введите Ваше имя:</label><br>
-            <input type="text" id="fname" name="fname" value="Имя"><br>
+            <input type="text" id="fname" name="fname" placeholder="Имя"><br>
             <label for="fcompany">Введите название компании:</label><br>
-            <input type="text" id="fcompany" name="company" value="Компания"><br><br>
+            <input type="text" id="fcompany" name="company" placeholder="Компания"><br><br>
             <input type="button" id = "start" value="Начать">
           </form>
       </div>
 
       <div id="last">
-        <p>Вы уже играли!</p>
+        <p>Вы уже играли! Ожидайте результатов конкурса.</p>
       </div>
 
 
