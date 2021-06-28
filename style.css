@@ -75,17 +75,19 @@ input[type=button], button {
   margin-left: -10px;
   margin-right: -10px;
   margin-bottom: 10px;
+  vertical-align: middle;
 }
 
 .raffle-text{
-  padding-left: 10px;
+  padding-left: 25px;
   color: white;
   font-family: 'Open Sans', sans-serif, Verdana, Arial;
-  font-size: 1em;
+  font-size: 35px;
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
   outline: medium none;
+  padding-top: 45px;
 }
 /* For mobile phones: */
 .header-content, .container {
@@ -105,6 +107,16 @@ input[type=button], button {
   }
   .header {
     height:50px;
+  }
+  .raffle-text{
+    padding-left: 10px;
+    color: white;
+    font-family: 'Open Sans', sans-serif, Verdana, Arial;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    outline: medium none;
   }
 }
 
