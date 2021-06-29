@@ -370,7 +370,7 @@ if (typeof Object.create !== 'function') {
             
             	//var _url = "https://docs.google.com/forms/d/e/1FAIpQLSdBhcNkVqfyxnobmVvOHmtrdJKAwwrhW8PNO7vcFuVb9oVsnA/formResponse?usp=pp_url&entry.200784527=" + _name + "&entry.235462744=" + _company + "&entry.1453945788=" + _reward + "&submit=Submit";
             	
-            	var _url = "https://docs.google.com/forms/d/e/1FAIpQLSdBhcNkVqfyxnobmVvOHmtrdJKAwwrhW8PNO7vcFuVb9oVsnA/formResponse?usp=pp_url&entry.1293273134=" + _name + "&entry.17574046=" + _company + "&entry.122678687=" + _reward + "&submit=Submit";
+            	var _url = "https://docs.google.com/forms/d/e/1FAIpQLSe3Wx0V61TT_KewfbGaTOzm_E3-5kXGwAT5W8WA7tV7_u5R5g/formResponse?usp=pp_url&entry.1293273134=" + _name + "&entry.17574046=" + _company + "&entry.122678687=" + _reward + "&submit=Submit";
             	
             	//var _url = "https://docs.google.com/forms/d/e/1FAIpQLSe3Wx0V61TT_KewfbGaTOzm_E3-5kXGwAT5W8WA7tV7_u5R5g/viewform?usp=pp_url&entry.1293273134=name&entry.17574046=cmoppanry&entry.122678687=123"
             	
